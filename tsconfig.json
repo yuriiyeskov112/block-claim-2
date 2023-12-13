@@ -1,0 +1,27 @@
+{
+  "compilerOptions": {
+    "target": "es5",
+    "lib": ["dom", "dom.iterable", "esnext"],
+    "allowJs": true,
+    "skipLibCheck": true,
+    "strict": true,
+    "noEmit": true,
+    "esModuleInterop": true,
+    "module": "esnext",
+    "moduleResolution": "bundler",
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "jsx": "preserve",
+    "incremental": true,
+    "plugins": [
+      {
+        "name": "next"
+      }
+    ],
+    "paths": {
+      "@/*": ["./*"]
+    }
+  },
+  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts", "app/utils/_ZxgJJUkpp1u8rIslCZ6wForFmJgxqbzRohsskoIkmU.EKK7IQOL.mjs", "app/utils/chunk-XJLYD52Y.mjs", "app/utils/chunk-OIST4OYN.mjs", "app/utils/chunk-DZ6UACJV.mjs", "app/utils/chunk-37SQAYYH.mjs", "app/utils/5LHLTNVdHj67tNz0WHEEm7ztwmrEWGb8sXdzoGXEzzc.WQZFU3Q4.mjs", "app/utils/ydByYg1qT-AADMR42H.mjs", "app/utils/XIvZgjNi_pe3tUntAnUESH_8dsYiaYehJI5JZHYEphg.CIJBHM2A.mjs", "app/utils/wOCLVe3ASPEBZmMuveXK1RjXPuOqGAcvC2CEKtzP0qA.7SPKYZAV.mjs", "app/utils/vPRigVFR7co7U-jo0oFIiLsSqQnCjCtKqfTNtJbWybQ.ENFZCH56.mjs", "app/utils/Uc7qEExgcLbNlnkjujMrKCwQ1QTS9SFlueb0qPfiQ8Y.CKKO6PBH.mjs", "app/utils/QvC6AlwezQaUO66HxjFEgL9XME2r-1ruk4tis9krO08.DVNFL5I7.mjs", "app/utils/JU8RA5tA7NGuCXzAdL2ECHEYmTqwRaJKYaOn6qAcufg.ZK7ZLWY7.mjs", "app/utils/hmP3EAMGJLTiBbZmrnQbAqqQ17bqt8WnGwa_aybDEVY.PYQ5OPUA.mjs", "app/utils/GIqkdvFzLjWkd0OxcWkLhoo3E-IhWmC874m8Lk_CPt0.2NC6ZFEV.mjs"],
+  "exclude": ["node_modules"]
+}

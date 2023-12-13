@@ -1,0 +1,78 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --foreground-rgb: 0, 0, 0;
+  --background-start-rgb: 214, 219, 220;
+  --background-end-rgb: 255, 255, 255;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --foreground-rgb: 255, 255, 255;
+    --background-start-rgb: 0, 0, 0;
+    --background-end-rgb: 0, 0, 0;
+  }
+}
+
+/* body {
+  color: rgb(var(--foreground-rgb));
+  background: linear-gradient(
+      to bottom,
+      transparent,
+      rgb(var(--background-end-rgb))
+    )
+    rgb(var(--background-start-rgb));
+} */
+
+main {
+  position: relative;
+  top: 86px;
+  height: calc(100vh - 86px);
+}
+
+.active {
+  color: #fbfbfb
+}
+
+.non-active {
+  color: #989ca1
+}
+
+.animate-div {
+  animation-name: animateBtn;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  animation-play-state: running;
+}
+
+.animate-div:hover {
+  background: radial-gradient(30% 50% at 50% 50%, rgb(255, 255, 255) 0%, rgba(255, 255, 255, 0) 100%);
+}
+
+@keyframes animateBtn {
+  0% { left: 0px; top: 0px; }
+  16% { left: 70px; top: 0px; }
+  23% { left: 80px; top: 15px; }
+  30% { left: 70px; top: 30px; }
+  50% { left: 0px; top: 30px; }
+  66% { left: -70px; top: 30px; }
+  73% { left: -80px; top: 15px; }
+  80% { left: -70px; top: 0px; }
+  100% { left: 0px; top: 0px; }
+}
+
+@media screen and (max-width: 640px) {
+  main {
+    height: auto;
+  }
+}
+
+@media screen and (max-width: 390px) {
+  header > div {
+    width: 100%;
+    padding: 10px 5px;
+  }
+}
